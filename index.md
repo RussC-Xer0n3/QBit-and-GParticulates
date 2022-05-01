@@ -20,7 +20,7 @@ Using the html notations from [toptal](https://www.toptal.com/designers/htmlarro
 
 &#402;(x)&#8319; &#8801; &sigma;((&pi;&#183;r&#179;)&#8319;&#8734;)&#8734;
 
-such that sigmoid &sigma; of sine wave &#8767; is of infinite scale to the N-Array &#8721; of both an infinite increment &#8710; and of the infinite Nabla or decrement &#8711; in both scales proportionally &#8733;. At least, that's the trail of thought.</p>
+such that sigmoid &sigma; of sine wave &#8767; is of infinite scale to the N-Array &#8721; of both an infinite increment &#8710; and of the infinite Nabla or decrement &#8711; in both scales proportionally &#8733;. At least, that's the trail of thought.
 
 ```
 float A;
