@@ -156,9 +156,9 @@ Y &#8779; 1 &#8893; 0
 
 J &#8779; &#8704;Y&#8734;
 
-P | J' &#8779; MDP
+P &#8739; J' &#8779; MDP
 
-Q &#8779; ((((P | J')&#8319;&#8734;)&sup2;)+Y)&#8734;
+Q &#8779; ((((P &#8739; J')&#8319;&#8734;)&sup2;)+Y)&#8734;
 
 ### Weights and Biases
 When defining the weights and biases, they are defined as random in each instance or iteration for several reasons; consideration of probability systems having a bias in which case the bias could be random to provide the best probable outcome based on what information the perceptron in the neural network is receiving as a constant.
