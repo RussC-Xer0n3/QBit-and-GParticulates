@@ -421,9 +421,9 @@ To calculate the probability of event occuring in said scale, we would need the 
 
 We look at the partial sum of time between two asymetrical points infinitely to assess the changes of occurrece for each iteration. Because time is proportional in the constant of the past, constant and the anticipated future relative to three dimensional space in time.
 
-X &asympeq; &prop;&part;&forall;&nabla;(&pi;(r<sup>3</sup>));
+X &#8781; &prop;&part;&forall;&nabla;(&pi;(r<sup>3</sup>));
 
-&because; &part;&sum;T&asympeq;(A&xharr;B)<sup>&infin;</sup><sub>&infin;</sub> &amps; &because; &forall;&nabla;&prop;&asymepeq;&infin;(&pi;(r<sup>3</sup>))&divide;T&there4;&asympeq;&nabla;&prop;T&asympeq;&part;&sum;T&plusmn;(A&xharr;B)<sup>&prime;</sup>&mid;X<sup>&infin;</sup><sub>&infin;</sub>&divide;T
+&#8757; &part;&sum;T&#8781;(A&#10231;B)<sup>&infin;</sup><sub>&infin;</sub> &amp; &#8757; &forall;&nabla;&prop;&#8781;&infin;(&pi;(r<sup>3</sup>))&divide;T&there4;&#8781;&nabla;&prop;T&#8781;&part;&sum;T&plusmn;(A&#10231;B)<sup>&prime;</sup>&#8739;X<sup>&infin;</sup><sub>&infin;</sub>&divide;T
 
 ## Other considerations
 There are of course however, not obvious considerations to factor into the code and what has been discussed in https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/blob/main/QuBits_GParticulates.pdf a subsequent loose write up of the code.
