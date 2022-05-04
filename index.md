@@ -425,7 +425,7 @@ Where X is change..
 
 X &#8781; &prop;&part;&forall;&nabla;(&pi;(r<sup>3</sup>));
 
-&#8757; &part;&sum;T&#8781;(A&#10231;B)<sup>&infin;</sup><sub>&infin;</sub> <br><br>&amp; &#8757; &forall;&nabla;&prop;&#8781;&infin;(&pi;(r<sup>3</sup>))&divide;T<br><br>&there4;<br><br>&#8781;&nabla;&prop;T&#8781;&part;&sum;T&plusmn;(A&#10231;B)<sup>&prime;</sup>&#8739;X<sup>&infin;</sup><sub>&infin;</sub>&divide;T
+&#8757; &part;&sum;T&#8781;(A&#10231;B)<sup>&infin;</sup><sub>&infin;</sub> <br><br>&amp; &#8757; &forall;&nabla;&prop;&#8781;&infin;(&pi;(r<sup>3</sup>))&divide;T<br><br>&there4;<br><br>&#8781;&nabla;&prop;T&#8781;&part;&sum;T&plusmn;(A&#10231;B)<sup>&prime;</sup>&#8739;QX<sup>&infin;</sup><sub>&infin;</sub>&divide;T
 
 ## Other considerations
 There are of course however, not obvious considerations to factor into the code and what has been discussed in https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/blob/main/QuBits_GParticulates.pdf a subsequent loose write up of the code.
