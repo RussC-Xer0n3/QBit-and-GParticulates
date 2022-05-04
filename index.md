@@ -417,9 +417,9 @@ float main () {
 ## Partial Time
 Because we can say that partial time is proportional in space time to it's constant we could therefore assume the gap between a time slice of point A to B is relative spherically in scale of effect unilaterally.
 
-To calculate the probability of event occuring in said scale, we would need the sum of the proportional time to the constant, hence why the scale matters when gathering data, too large, not enough data or power to move accordingly, too small, the data gathering and probability calculations to exceed or meet the reach of the desired goal.
+To calculate the probability of event occuring in said scale, we would need the sum of the proportional time to the constant, hence why the scale matters when gathering data, too large, not enough data or power to move accordingly due to scale exceeding the variables in the constant, too small, the data gathering and probability calculations to exceed or meet the reach of the desired goal are not extensive enough and invert occurs.
 
-We look at the partial sum of time between two asymetrical points infinitely to assess the changes of occurrece for each iteration. Because time is proportional in the constant of the past, constant and the anticipated future relative to three dimensional space in time.
+We look at the partial sum of time between two asymetrical points infinitely to assess the changes of occurreces (variables) for each iteration. Because time is proportional in the constant of the past, constant and the anticipated future relative to three dimensional space in time; the constant occurance becomes a variable depending on change over time per decision made infinitely.
 
 Where X is change..
 
