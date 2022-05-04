@@ -414,6 +414,17 @@ float main () {
 }
 ```
 
+## Partial Time
+Because we can say that partial time is proportional in space time to it's constant we could therefore assume the gap between a time slice of point A to B is relative spherically in scale of effect unilaterally.
+
+To calculate the probability of event occuring in said scale, we would need the sum of the proportional time to the constant, hence why the scale matters when gathering data, too large, not enough data or power to move accordingly, too small, the data gathering and probability calculations to exceed or meet the reach of the desired goal.
+
+We look at the partial sum of time between two asymetrical points infinitely to assess the changes of occurrece for each iteration. Because time is proportional in the constant of the past, constant and the anticipated future relative to three dimensional space in time.
+
+X &asympeq; &prop;&part;&forall;&nabla;(&pi;(r<sup>3</sup>));
+
+&because; &part;&sum;T&asympeq;(A&xharr;B)<sup>&infin;</sup><sub>&infin;</sub> &amps; &because; &forall;&nabla;&prop;&asymepeq;&infin;(&pi;(r<sup>3</sup>))&divide;T&there4;&asympeq;&nabla;&prop;T&asympeq;&part;&sum;T&plusmn;(A&xharr;B)<sup>&prime;</sup>&mid;X<sup>&infin;</sup><sub>&infin;</sub>&divide;T
+
 ## Other considerations
 There are of course however, not obvious considerations to factor into the code and what has been discussed in https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/blob/main/QuBits_GParticulates.pdf a subsequent loose write up of the code.
 
