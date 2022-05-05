@@ -430,7 +430,7 @@ for partial time we are defining the calculation for X, piping that into a proba
 However, a secondary NN which is symbiotic to the second will be required so as not to overload the first NN.
 ```
 #define X (Q*(PI*A)))
-#define PARTIAL ((X, Q++), Y)
+#define PARTIAL ((X, Q++) / Y)
 #define PARTIALMDP ((REWARD + BIAS) / PARTIAL)
 ```
 
