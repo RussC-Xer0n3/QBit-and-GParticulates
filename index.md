@@ -363,69 +363,76 @@ float OUTPUT;
 float main () {
 
     //The basics, learning rate first
-    #define EPSILON 5E-5;
-    #define Y (? 0 : 1);
-    #define PI 3.1415926535;
-    #define A (pow((PI * RAD), DIM));
-    #define SIG ((1) / (-1(C--)));
-    #define SIGMOID (1.0 / (-1 + (exp(O)--))));
+    #define EPSILON 5E-5
+    #define Y (? 0 : 1)
+    #define PI 3.1415926535
+    #define A (pow((PI * RAD), DIM))
+    #define SIG ((1) / (-1(C--)))
+    #define SIGMOID (1.0 / (-1 + (exp(O)--))))
     
     //Preparing for NN and Biases
-    #define WEIGHT (modf(((randn() % 1.0) + 0.0), float *wdiscard));
-    #define BIAS (modf(((randn() % 1.0) + 0.0), float *bdiscard));
+    #define WEIGHT (modf(((randn() % 1.0) + 0.0), float *wdiscard))
+    #define BIAS (modf(((randn() % 1.0) + 0.0), float *bdiscard))
     
     //Weigh up the costs and gradient of descent
-    #define COST (weights, BIAS);
-    #define GRAD_DESCENT (pow(((COST) - (COST(EPSILON))), 2));    
+    #define COST (weights, BIAS)
+    #define GRAD_DESCENT (pow(((COST) - (COST(EPSILON))), 2))
         
     //Define constant first
-    #define C SIG(exp(pow(A), ((exp(IN++)) / (exp(--IN))))); //predecrement all time as past time divide over increment of all time for continuum. Had to swap them as per order of operation
-    //#define C SIG(exp(pow(A), ((exp(++PT)) / (exp(FT++))))); //preincrement the past and divide over the future
+    #define C SIG(exp(pow(A), ((exp(IN++)) / (exp(--IN))))) //predecrement all time as past time divide over increment of all time for continuum. Had to swap them as per order of operation
+    //#define C SIG(exp(pow(A), ((exp(++PT)) / (exp(FT++))))) //preincrement the past and divide over the future
     
     //Begin telling computer about the past and future and all time
-    #define PT ((FT % C) / T);    
-    #define FT (((T) / C) - PT);
-    #define T (exp((V / (PT + FT)) / (exp(pow(IN, DIM), (V)))));
+    #define PT ((FT % C) / T)
+    #define FT (((T) / C) - PT)
+    #define T (exp((V / (PT + FT)) / (exp(pow(IN, DIM), (V)))))
     
     //Tell it what to calculate and what is going into the constant
-    #define V (pow(T, 3) / (PT - FT));
-    #define VEL [T, V];
-    #define IN T;
+    #define V (pow(T, 3) / (PT - FT))
+    #define VEL [T, V]
+    #define IN T
 
     //Markov Decision Process
-    #define REWARD ((INPUT, N) / Y);
-    #define PROBABILITY ((INPUT, Y) / N);
-    #define MDP ((REWARD + BIAS) / PROBABILITY);
+    #define REWARD ((INPUT, N) / Y)
+    #define PROBABILITY ((INPUT, Y) / N)
+    #define MDP ((REWARD + BIAS) / PROBABILITY)
 
     //Implementation
-    #define N INPUT++;
-    #define OUT SIGMOID((weights * N) + BIAS);
+    #define N INPUT++
+    #define OUT SIGMOID((weights * N) + BIAS)
     
     //Calculate the probability
-    #define Q pow(pow(MDP, N), 2) + Y;
-    #define R ((REWARD + BIAS) / Q);
+    #define Q pow(pow(MDP, N), 2) + Y
+    #define R ((REWARD + BIAS) / Q)
 
     //Initialise the input, output and hidden layers of the network 
-    #define INPUT ((T, OUT, OUTPUT) * WEIGHT) + BIAS;
-    #define HIDDEN (((10 * pow(20, 4)) * WEIGHT * (INPUT));
-    #define OUTPUT ((4 * WEIGHT) / (HIDDEN)) + BIAS;
+    #define INPUT ((T, OUT, OUTPUT) * WEIGHT) + BIAS
+    #define HIDDEN (((10 * pow(20, 4)) * WEIGHT * (INPUT))
+    #define OUTPUT ((4 * WEIGHT) / (HIDDEN)) + BIAS
     
-    return 1;
+    return 1
 }
 ```
 
 ## Partial Time
 Because we can say that partial time is proportional in space time to it's constant we could therefore assume the gap between a time slice of point A to B is relative spherically in scale of effect unilaterally.
 
-To calculate the probability of event occuring in said scale, we would need the sum of the proportional time to the constant, hence why the scale matters when gathering data, too large, not enough data or power to move accordingly due to scale exceeding the variables in the constant, too small, the data gathering and probability calculations to exceed or meet the reach of the desired goal are not extensive enough and invert occurs.
+To calculate the probability of event occuring in said scale, we would need the sum of the proportional time to the constant, hence why the scale matters when gathering data, too large, not enough data or power to move accordingly, too small, the data gathering and probability calculations to exceed or meet the reach of the desired goal.
 
-We look at the partial sum of time between two asymetrical points infinitely to assess the changes of occurreces (variables) for each iteration. Because time is proportional in the constant of the past, constant and the anticipated future relative to three dimensional space in time; the constant occurance becomes a variable depending on change over time per decision made infinitely.
+We look at the partial sum of time between two asymetrical points infinitely to assess the changes of occurrece for each iteration. Because time is proportional in the constant of the past, constant and the anticipated future relative to three dimensional space in time.
 
-Where X is change..
+X &asympeq; &prop;&part;&forall;&nabla;(&pi;(r<sup>3</sup>));
 
-X &#8781; &prop;&part;&forall;&nabla;(&pi;(r<sup>3</sup>));
+&because; &part;&sum;T&asympeq;(A&xharr;B)<sup>&infin;</sup><sub>&infin;</sub> &amps; &because; &forall;&nabla;&prop;&asymepeq;&infin;(&pi;(r<sup>3</sup>))&divide;T&there4;&asympeq;&nabla;&prop;T&asympeq;&part;&sum;T&plusmn;(A&xharr;B)<sup>&prime;</sup>&mid;X<sup>&infin;</sup><sub>&infin;</sub>&divide;T
 
-&#8757; &part;&sum;T&#8781;(A&#10231;B)<sup>&infin;</sup><sub>&infin;</sub> <br><br>&amp; &#8757; &forall;&nabla;&prop;&#8781;&infin;(&pi;(r<sup>3</sup>))&divide;T<br><br>&there4;<br><br>&#8781;&nabla;&prop;T&#8781;&part;&sum;T&plusmn;(A&#10231;B)<sup>&prime;</sup>&#8739;QX<sup>&infin;</sup><sub>&infin;</sub>&divide;T
+### In code we need only the value of X and the probability calculation
+for partial time we are defining the calculation for X, piping that into a probability calculus which is expressed in PARTIAL and then feeding it through to MDP for probability calculations.
+However, a secondary NN which is symbiotic to the second will be required so as not to overload the first NN.
+```
+#define X (Q*(PI*A)))
+#define PARTIAL ((X, Q++), Y)
+#define PARTIALMDP ((REWARD + BIAS) / PARTIAL)
+```
 
 ## Other considerations
 There are of course however, not obvious considerations to factor into the code and what has been discussed in https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/blob/main/QuBits_GParticulates.pdf a subsequent loose write up of the code.
