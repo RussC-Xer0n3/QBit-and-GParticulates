@@ -423,7 +423,7 @@ We look at the partial sum of time between two asymetrical points infinitely to 
 
 X &#8781; &prop;&part;&forall;&nabla;(&pi;(r<sup>3</sup>));
 
-&#8757; &part;&sum;T&#8781;(A&#10231;B)<sup>&infin;</sup><sub>&infin;</sub> &amp; &#8757; &forall;&nabla;&prop;&#8781;&infin;(&pi;(r<sup>3</sup>))&divide;T&there4;&#8781;&nabla;&prop;T&#8781;&part;&sum;T&plusmn;(A&#10231;B)<sup>&prime;</sup>&#8739;X<sup>&infin;</sup><sub>&infin;</sub>&divide;T
+&#8757; &part;&sum;T&#8781;(A&#10231;B)<sup>&infin;</sup><sub>&infin;</sub><br><br>&amp; &#8757; &forall;&nabla;&prop;&#8781;&infin;(&pi;(r<sup>3</sup>))&divide;T<br><br>&there4;<br><br>&#8781;&nabla;&prop;T&#8781;&part;&sum;T&plusmn;(A&#10231;B)<sup>&prime;</sup>&#8739;X<sup>&infin;</sup><sub>&infin;</sub>&divide;T
 
 ### In code we need only the value of X and the probability calculation
 for partial time we are defining the calculation for X, piping that into a probability calculus which is expressed in PARTIAL and then feeding it through to MDP for probability calculations.
