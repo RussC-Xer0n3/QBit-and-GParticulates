@@ -434,6 +434,8 @@ However, a secondary NN which is symbiotic to the second will be required so as 
 #define PARTIALMDP ((REWARD + BIAS) / PARTIAL)
 ```
 
+Of course we need to subtract the past time PT and the future time FT surmised to get the 'slice' or partial of the constant, not dissimilar to a snapshot.
+
 ## Other considerations
 There are of course however, not obvious considerations to factor into the code and what has been discussed in https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/blob/main/QuBits_GParticulates.pdf a subsequent loose write up of the code.
 
