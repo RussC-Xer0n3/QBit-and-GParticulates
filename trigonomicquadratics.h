@@ -32,14 +32,14 @@ void getcubic(p){
     return cubic;
 }
 
+void float getx(h, l, p){
+    const float x = (c%p) == ((c,l) - p);
+    return x;
+}
+
 void float getcor(x){
     float cor = (x.sin(60));
     return cor;
-}
-
-void float getx(h, l, p){
-    const float x = (h%l) == ((h,l) - p);
-    return x;
 }
 
 /*I'll have a think on proc, perhas some sockets*/
