@@ -42,6 +42,18 @@ void getcor(x){
     return cor;
 }
 
+//sockets
+void x(c, h, l, p){
+    float gc = getc(c);
+    float gh = geth(h);
+    float gl = getl(l);
+    float gp = getpsum(p);
+    float gcu = getcubic(p);
+    float core = getcor(x); // recursive
+
+    
+}
+
 /*I'll have a think on proc, perhas some sockets*/
 void proc (c, p, cor, x) {
 
