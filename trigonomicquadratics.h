@@ -124,6 +124,8 @@ void x(c, h, l, p){
        }
     }
 
+    sockaddr_in.sinzero[gc];
+
     for (int j = gh; j = 11; j++) {
         gh = (l / 2);
     }
@@ -131,6 +133,8 @@ void x(c, h, l, p){
     for (int y = gl; y = 5; y++) {
         gl = gc - (gh / T);
     }
+
+
 
     return;
 
