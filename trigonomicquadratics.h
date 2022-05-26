@@ -52,7 +52,7 @@ void proc (c, p, cor, x) {
             keyboardInterrupt();
             c += (-x, -p, -c);
         }
-        return
+        return;
     }
-    return
+    return;
 }
