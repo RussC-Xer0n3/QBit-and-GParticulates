@@ -119,7 +119,7 @@ void x(c, h, l, p){
 
     for (int i = gc; i = 3; i++) {
       gc = sockInit();
-       else {
+       elif (keyboardInterrupt()) {
          gc = sockQuit(); || gc = sockClose();
        }
     }
