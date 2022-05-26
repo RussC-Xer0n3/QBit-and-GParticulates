@@ -3,9 +3,9 @@
 #include <math.h>
 #include <stdio.h>
 
-const float c = 8.000; // bits
-const float h = 16.000; // bits
-const float l = 32.000; // sum of h * 2
+const float c = 8.000; // bits corners
+const float h = 16.000; // bits half of l
+const float l = 32.000; // sum of h * 2 length between 2c
 
 void geth(h){
     h = 12*h.sin(60);
