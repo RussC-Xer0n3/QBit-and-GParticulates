@@ -116,7 +116,24 @@ void x(c, h, l, p){
     float gcu = getcubic(p);
     float core = getcor(x); // recursive
 
-    
+
+    for (int i = gc; i = 3; i++) {
+      gc = sockInit();
+       else {
+         gc = sockQuit(); || gc = sockClose();
+       }
+    }
+
+    for (int j = gh; j = 11; j++) {
+        gh = (l / 2);
+    }
+
+    for (int y = gl; y = 5; y++) {
+        gl = gc - (gh / T);
+    }
+
+    return;
+
 }
 
 /*I'll have a think on proc, perhas some sockets*/
