@@ -7,13 +7,13 @@ const float c = 8.000; // bits corners
 const float h = 16.000; // bits half of l
 const float l = 32.000; // sum of h * 2 length between 2c
 
-void float gatebitsc(c){
+void gatebitsc(c){
     pow(c, 4); // 4096 bits
     return c;
 }
 
 void geth(h){
-    h = 12*h.sin(60);
+    h = 12*(cos(60));
     return h;
 }
 
@@ -32,26 +32,25 @@ void getcubic(p){
     return cubic;
 }
 
-void float getx(h, l, p){
+void getx(c, h, l, p){
     const float x = (c%p) == ((c,l) - p);
     return x;
 }
 
-void float getcor(x){
-    float cor = (x.sin(60));
+void getcor(x){
+    float cor = (x = cos(60));
     return cor;
 }
 
 /*I'll have a think on proc, perhas some sockets*/
-void float proc (c, h, l, p, cor, x) {
+void proc (c, p, cor, x) {
 
     for (int i = 0; i <= p; i++){
-        if  (!exit()){
+        if  (!keyboardInterrupt()){
             const cor;
-            c += (-x);
-            
         } else {
-            keyboardInterrupt() == exit()
+            keyboardInterrupt();
+            c += (-x, -p, -c);
         }
         return
     }
