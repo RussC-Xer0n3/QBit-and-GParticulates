@@ -118,16 +118,19 @@ void x(c, h, l, p){
 
 
     for (int i = gc; i = 3; i++) {
+      
+      sockaddr_in.sinzero[gc];
+      
       gc = sockInit();
        elif (keyboardInterrupt()) {
          gc = sockQuit(); || gc = sockClose();
        }
+       return;
     }
-
-    sockaddr_in.sinzero[gc];
 
     for (int j = gh; j = 11; j++) {
         gh = (l / 2);
+        return;
     }
 
     for (int y = gl; y = 5; y++) {
