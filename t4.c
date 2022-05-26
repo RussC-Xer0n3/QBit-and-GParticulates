@@ -17,6 +17,7 @@ MOVED TO THYME REPOSITORY
 #include <float.h>
 #include <time.h>
 #include <time.h>
+#include "trigonomicquadratics.h" //refer to C:\Users\devel\Documents\Pypyramid_polygomy_0.7_variants.zip
 
 float A;
 float T;
@@ -26,7 +27,7 @@ float fT;
 float v;
 float pi;
 float r;
-float dim = 3;
+float dim = 3; //trigonomicquadratics
 float inc;
 float sig;
 //An afterthoughts
