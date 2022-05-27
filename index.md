@@ -91,14 +91,14 @@ I set about considering how that might be achieved programmatically. Well we hav
 
 I chose to set about writing, following and attempting to compress two existing solutions for the DNN (detailed in the code on GitHub) and for the probability chose the Markov Decision Process since I am already familiar with this process from my final project at University.
 
-It's almost complete and I like the original in [q2.c](https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/q2.c) and the latest in [q9.c](https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/q9.c). They require some review and verification.
+It's almost complete and I like the original in [q2.c](https://github.com/RussC-Xer0n3/QBit-and-GParticulates/blob/main/q2.c) and the latest in [q9.c](https://github.com/RussC-Xer0n3/QBit-and-GParticulates/blob/main/q9.c). They require some review and verification.
 
 I was also considering what a God particle might look like as a signal during all this code writing and mathematical exploration. It stemmed from the fusion project in the fusion repository, arriving at the conclusion it would be a sigmoid with an infinite exponent for an infinite iteration to the value of PI as it would be omnipresent cubed since it would be three dimensional, I set about trying to express it in code and Math. I didn't need to add the fourth dimension of time, since it is already rolling infinitely. Here's the code for the GParticulate.
 
 The important bit is not the whole code and it's syntax but the expression(s).
 
 ## 👋 Welcome!
-  [We’re using Discussions as a place to connect with other members of our community. We hope that you:](https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/discussions)
+  [We’re using Discussions as a place to connect with other members of our community. We hope that you:](https://github.com/RussC-Xer0n3/QBit-and-GParticulates/discussions)
   * Ask questions you’re wondering about.
   * Share ideas.
   * Engage with other community members.
@@ -116,7 +116,7 @@ are typically servers which rely on the most probably quartz isotope for oscilla
 we are looking at TDM (time division multiplexing), Time itself, whether it can be networked on a small emulated and larger scale later on to look at time data (occurrences in time) in an attempt to eventually traverse the probability of an event occurring and make that safer. Based on predictability and anticipation.
 
 ### After introducing yourself
-Take a look at some of the code and please do go over to [https://russc-xer0n3.github.io/QBit-and-Gparticulates/](https://russc-xer0n3.github.io/QBit-and-Gparticulates/) for more information about the current code and it's prototype iterations. Please also refer to the current and updated directory [https://github.com/RussC-Xer0n3/Thyme-old/blob/main/t9.c](https://github.com/RussC-Xer0n3/Thyme-old/blob/main/t9.c) for main class
+Take a look at some of the code and please do go over to [https://russc-xer0n3.github.io/QBit-and-GParticulates/](https://russc-xer0n3.github.io/QBit-and-GParticulates/) for more information about the current code and it's prototype iterations. Please also refer to the current and updated directory [https://github.com/RussC-Xer0n3/Thyme-old/blob/main/t9.c](https://github.com/RussC-Xer0n3/Thyme-old/blob/main/t9.c) for main class
 
 They are kept separate to distinguish between the two, t9.c is the main class and we are building into and from that class.
 
