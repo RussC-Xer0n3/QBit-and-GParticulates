@@ -99,6 +99,54 @@ I was also considering what a God particle might look like as a signal during al
 
 The important bit is not the whole code and it's syntax but the expression(s).
 
+## 👋 Welcome!
+  [We’re using Discussions as a place to connect with other members of our community. We hope that you:](https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/discussions)
+  * Ask questions you’re wondering about.
+  * Share ideas.
+  * Engage with other community members.
+  * Welcome others and are open-minded. Remember that this is a community we build together 💪.
+  * Most importantly, if you can think inside, outside and on the edge of the box whilst observing your own thoughts and processes, we encourage your processes to flow forward into our branches of development.
+
+To get started, comment below with an introduction of yourself and tell us about what you do. We can better place you in the project knowing which skillsets you have.
+
+Primarily at Xer0n3 we are thinking about time networking, not a time server, they're different things.
+
+### Time servers
+are typically servers which rely on the most probably quartz isotope for oscillations and on the larger scale, ubiquitous updates from other time servers and nodes for synchronisation.
+
+### Time network
+we are looking at TDM (time division multiplexing), Time itself, whether it can be networked on a small emulated and larger scale later on to look at time data (occurrences in time) in an attempt to eventually traverse the probability of an event occurring and make that safer. Based on predictability and anticipation.
+
+### After introducing yourself
+Take a look at some of the code and please do go over to russc-xer0n3.github.io/QBit-and-GParticulates for more information about the current code. Please also refer to the current and updated directory https://github.com/RussC-Xer0n3/Thyme-old/blob/main/t9.c
+
+They are kept separate to distinguish between the two, t9.c is the main class and we are building into and from that class.
+
+If you need a branch to begin some thoughts of your own, let us know and we'll see what we can do.
+
+The project is largely unfunded at present and consists of a small team within a large network in the community, the code is both open-sourced and proprietary.
+
+### Teams and standards
+Our teams are the GNU community, Microsoft, AMD amongst others, we welcome all platforms since we should be in keeping with the IEEE standards of Interoperability, Interchangeability and Intercompatibility with standardisation across the board.
+
+
+# Focus
+We are looking to keep t9.c almost completely as is, it is ultimately the first iteration and is thus sectioned off from the rest of the exploratory iterations and ideas held in QBit and GParticulates. 
+
+### Approach
+A hybrid evolutionary prototyping methodology is being used because a new project isn't always linear though there are elements of prototyping which will require an agile or waterfall approach in each evolution based on future stakeholder requirements or feature requests.
+
+The hybrid is preferred because it makes use of multiple methodological tools to approach each challenge accordingly. In example, to program a base socket, it is already documented, standardised and widely used and simply requires the agile element for creative exploratory prototyping, (you might want to plug in some really useful EMF/EMP code you wrote or modified for a good purpose, to look into some point for location in time given the data insights). In which case it becomes a waterfall approach with an agile responsiveness, hence, hybrid.
+
+### How is the code organised at the moment?
+At the moment what we are working on is the sockets at each intersection of an equilateral TDM in the time mesh, hoping to then plug-in a new NN or DNN with additional AI support for calculations given data insights, to calculate a probability given a future point in time.
+
+Headers which facilitate the t9 class should all be separate according to a genre, for example, the trigonometric and quadratic header is separate from the tsocket.h header file which will be separate from the NN or DNN which will be separate from the AI in use.
+
+We cannot overload methods nor headers, when scaled down they'll overheat and melt.
+
+## So far...
+
 Using the html notations from [toptal](https://www.toptal.com/designers/htmlarrows/math/) and [w3schools](https://www.w3schools.com/charsets/ref_utf_greek.asp), I think the expression I am trying to complete is similar to the expression:
 
 &#402;(x)&#8319; &#8801; &sigma;((&pi;&#183;r&#179;)&#8319;&#8734;)&#8734;
