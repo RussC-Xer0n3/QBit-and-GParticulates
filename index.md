@@ -116,7 +116,7 @@ are typically servers which rely on the most probably quartz isotope for oscilla
 we are looking at TDM (time division multiplexing), Time itself, whether it can be networked on a small emulated and larger scale later on to look at time data (occurrences in time) in an attempt to eventually traverse the probability of an event occurring and make that safer. Based on predictability and anticipation.
 
 ### After introducing yourself
-Take a look at some of the code and please do go over to https://russc-xer0n3.github.io/QBit-and-GParticulates for more information about the current code and it's prototype iterations. Please also refer to the current and updated directory https://github.com/RussC-Xer0n3/Thyme-old/blob/main/t9.c for main class
+Take a look at some of the code and please do go over to [https://russc-xer0n3.github.io/QBit-and-Gparticulates/](https://russc-xer0n3.github.io/QBit-and-Gparticulates/) for more information about the current code and it's prototype iterations. Please also refer to the current and updated directory [https://github.com/RussC-Xer0n3/Thyme-old/blob/main/t9.c](https://github.com/RussC-Xer0n3/Thyme-old/blob/main/t9.c) for main class
 
 They are kept separate to distinguish between the two, t9.c is the main class and we are building into and from that class.
 
