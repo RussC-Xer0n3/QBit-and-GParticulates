@@ -17,7 +17,7 @@ I was also considering what a God particle might look like as a signal during al
 The important bit is not the whole code and it's syntax but the expression(s).
 
 ## 👋 Welcome!
-  We’re using Discussions as a place to connect with other members of our community. We hope that you:
+  [We’re using Discussions as a place to connect with other members of our community. We hope that you:](https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/discussions)
   * Ask questions you’re wondering about.
   * Share ideas.
   * Engage with other community members.
@@ -35,7 +35,7 @@ are typically servers which rely on the most probably quartz isotope for oscilla
 we are looking at TDM (time division multiplexing), Time itself, whether it can be networked on a small emulated and larger scale later on to look at time data (occurrences in time) in an attempt to eventually traverse the probability of an event occurring and make that safer. Based on predictability and anticipation.
 
 ### After introducing yourself
-Take a look at some of the code and please do go over to russc-xer0n3.github.io/QBit-and-GParticulates for more information about the current code. Please also refer to the current and updated directory https://github.com/RussC-Xer0n3/Thyme-old/blob/main/t9.c
+Take a look at some of the code and please do go over to https://russc-xer0n3.github.io/QBit-and-GParticulates for more information about the current code and it's prototype iterations. Please also refer to the current and updated directory https://github.com/RussC-Xer0n3/Thyme-old/blob/main/t9.c for main class
 
 They are kept separate to distinguish between the two, t9.c is the main class and we are building into and from that class.
 
@@ -63,6 +63,8 @@ Headers which facilitate the t9 class should all be separate according to a genr
 We cannot overload methods nor headers, when scaled down they'll overheat and melt.
 
 ## So far...
+
+
 Using the html notations from [toptal](https://www.toptal.com/designers/htmlarrows/math/) and [w3schools](https://www.w3schools.com/charsets/ref_utf_greek.asp), I think the expression I am trying to complete is similar to the expression:
 
 &#402;(x)&#8319; &#8801; &sigma;((&pi;&#183;r&#179;)&#8319;&#8734;)&#8734;
@@ -390,6 +392,7 @@ X &#8781; &prop;&part;&forall;&nabla;(&pi;(r<sup>3</sup>))
 
 &#8757; &part;&sum;T&#8781;(A&#10231;B)<sup>&infin;</sup><sub>&infin;</sub><br><br>&amp; &#8757; &forall;&nabla;&prop;&#8781;&infin;(&pi;(r<sup>3</sup>))&divide;T<br><br>&there4;<br><br>&nabla;&prop;T&#8781;&part;&sum;T&plusmn;(A&#10231;B)<sup>&prime;</sup>&#8739;QX<sup>&infin;</sup><sub>&infin;</sub>&divide;T
 
+
 ### In code we need only the value of X and the probability calculation
 for partial time we are defining the calculation for X, piping that into a probability calculus which is expressed in PARTIAL and then feeding it through to MDP for probability calculations.
 However, a secondary NN which is symbiotic to the second will be required so as not to overload the first NN.
@@ -398,10 +401,9 @@ However, a secondary NN which is symbiotic to the second will be required so as 
 #define PARTIAL ((X, Q++) / Y)
 #define PARTIALMDP ((REWARD + BIAS) / PARTIAL)
 ```
-
 Of course we need to subtract the past time PT and the future time FT surmised to get the 'slice' or partial of the constant, not dissimilar to a snapshot.
 
-## Other considerations
+## Other Considerations
 There are of course however, not obvious considerations to factor into the code and what has been discussed in https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/blob/main/QuBits_GParticulates.pdf a subsequent loose write up of the code.
 
 There are considerations of gravity and magnetic fields in EMP and EMF which have not been factored in.
