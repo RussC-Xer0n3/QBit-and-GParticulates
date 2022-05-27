@@ -10,7 +10,7 @@ I set about considering how that might be achieved programmatically. Well we hav
 
 I chose to set about writing, following and attempting to compress two existing solutions for the DNN (detailed in the code on GitHub) and for the probability chose the Markov Decision Process since I am already familiar with this process from my final project at University.
 
-It's almost complete and I like the original in [q2.c](https://github.com/RussC-Xer0n3/QBit-and-GParticulates/q2.c) and the latest in [q9.c](https://github.com/RussC-Xer0n3/QBit-and-GParticulates/q9.c). They require some review and verification.
+It's almost complete and I like the original in [q2.c](https://github.com/RussC-Xer0n3/QBit-and-GParticulates/blob/main/q2.c) and the latest in [q9.c](https://github.com/RussC-Xer0n3/QBit-and-GParticulates/blob/main/q9.c). They require some review and verification.
 
 I was also considering what a God particle might look like as a signal during all this code writing and mathematical exploration. It stemmed from the fusion project in the fusion repository, arriving at the conclusion it would be a sigmoid with an infinite exponent for an infinite iteration to the value of PI as it would be omnipresent cubed since it would be three dimensional, I set about trying to express it in code and Math. I didn't need to add the fourth dimension of time, since it is already rolling infinitely. Here's the code for the GParticulate.
 
