@@ -41,14 +41,11 @@ else
 
 #include <stdlib.h>
 #include <stdarg.h>
-#include <stdio.h>
 #include <string.h>
 #include <math.h>
-#include <stdio.h>
 #include "trigonomicquadratics.h"
 
 int const NTP = 143;
-int const TELNET = 23;
 
 #define PROTOPORT NTP
 
@@ -61,7 +58,7 @@ int main(int argc, char *argv[]) {
   struct protoent *ptrp;
   struct sockaddr_in sad;
   int sd;
-  int port = NTP;
+  int port = PROTOPORT;
   char *host;
   int n;
   char buf[1000];
@@ -124,8 +121,9 @@ int main(int argc, char *argv[]) {
   }
 
   n = recv(sd, buf, sizeof(buf), 0);
-  while (n == NTP) {
-    write(1,buf,n);
+
+  while (n > 0) {
+    write(1, buf, n);
     n = recv(sd, buf, sizeof(buf), 0);
   }
 
