@@ -22,38 +22,33 @@
   #include <stderr.h>
 #endif
 
-#ifdef unix
-  #define WIN32
-  #include <Windows.h>
-  #include <winsock.h>
-  #include <winsock2.h>
-  #include <Ws2tcpip.h>
-else
-  #define closesocket close
-  #include <sys/types.h>
-  #include <sys/socket.h>
-  #include <netinet.h>
-  #include <arpa/net.h>
-  #include <netdb.h>
-  #include <netdb.h>  // Needed for getaddrinfo() and freeaddrinfo()
-  #include <unistd.h> // Needed for close()
+/**
+* Computer Networks and Internets 3rd Ed. Prentice Hall, Comer, E. D,. 2001 
+*/
+
+#ifndef unix
+#define WIN32
+#include <Windows.h>
+#include <winsock.h>
+#else
+#define closesocket close
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <netdb.h>
 #endif
 
-#include <stdlib.h>
-#include <stdarg.h>
+#include <stdio.h>
 #include <string.h>
-#include <math.h>
-#include "trigonomicquadratics.h"
 
-int const NTP = 143;
-
-#define PROTOPORT NTP
+#define PROTOPORT 143
 
 extern int errno;
 char localhost[] = "localhost";
 
 // Socket and protocols
-int main(int argc, char *argv[]) {
+main(int argc, char *argv[]) {
   struct hostent *ptrh;
   struct protoent *ptrp;
   struct sockaddr_in sad;
@@ -63,21 +58,24 @@ int main(int argc, char *argv[]) {
   int n;
   char buf[1000];
 
-  #ifdef WIN32
-    WSADATA wsaData;
-    WSAStartup(0x0101, &wsaData);
-  #endif
+#ifdef WIN32
+  WSADATA wsaData;
+  WSAStartup(0x0101, &wsaData);
+#endif
   
   memset((char *)&sad, 0, sizeof(sad));
   sad.sin_family = AF_INET;
 
-  port = PROTOPORT;
+  if (argc > 2) {
+      port = atoi(argv[2]);
+  } else {
+      port = PROTOPORT;
+  }
+
   /**
    * Check cmd arg for port and force NTP else report 
   */
-  if (port != 143) {
-    port = PROTOPORT;
-    port = atoi(argv[2]);
+  if (port > 0) {
     sad.sin_port = htons((u_short)port);
   } else {
     fprintf(stderr, "bad port number %s\n", argv[2]);
@@ -95,14 +93,13 @@ int main(int argc, char *argv[]) {
     host = "localhost";
   }
 
-  #define ptrh = gethostbyname(host);
-
-  if (((argv *)ptrh) == NULL) {
-    fprintf(stderr,"invalid host: %s\n %s\n", host, ptrh);
+  ptrh = gethostbyname(host);
+  if (((char *)ptrh) == NULL) {
+    fprintf(stderr,"invalid host: %s\n %s\n", host);
     exit(1);
   }
 
-  memcpy(&sad.sin_addr, ptrh->h_addr, ptrh->h_length);
+  memcpy(&sad.sin_addr, ptrh -> h_addr, ptrh -> h_length);
 
   if (((int)(ptrp = getprotobyname("tcp"))) == 0) {
     fprintf(stderr,"cannot map \"tcp\" to protocol number: %s\n", ptrp);
@@ -121,9 +118,8 @@ int main(int argc, char *argv[]) {
   }
 
   n = recv(sd, buf, sizeof(buf), 0);
-
   while (n > 0) {
-    write(1, buf, n);
+    write(1,buf,n);
     n = recv(sd, buf, sizeof(buf), 0);
   }
 
