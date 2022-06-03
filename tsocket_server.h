@@ -108,9 +108,9 @@ main(int argc, char *argv[])
             exit(1);
         }
         visits++;
-        //sprintf(buf, "This server has been contacted %d time%s\n",visits,visits==1?".":"s.");
+        //sprintf(*buf, "This server has been contacted %d time%s\n",visits,visits==1?".":"s.");
 
-        //send(sd2, buf, strlen(buf), 0);
+        send(sd2, *buf, strlen(*buf), 0);
         closesocket(sd2);
     }
 }

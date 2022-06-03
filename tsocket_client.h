@@ -117,10 +117,10 @@ main(int argc, char *argv[]) {
     exit(1);
   }
 
-  n = recv(sd, buf, sizeof(buf), 0);
+  n = recv(sd, buf, sizeof(*buf), 0);
   while (n > 0) {
     write(1,buf,n);
-    n = recv(sd, buf, sizeof(buf), 0);
+    n = recv(sd, buf, sizeof(*buf), 0);
   }
 
   /* Close the socket */
