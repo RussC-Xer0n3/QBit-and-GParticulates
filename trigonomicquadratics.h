@@ -81,13 +81,20 @@ void proc (c, cor, x, l, h) {
      * first tier variables
      */
 
-    int matrix[4][4][1] = {{{cs0},{cc0},{ch0},{cl0}}, 
-                           {{cs1},{cc1},{ch1},{cl1}}, 
-                           {{cs2},{cc2},{ch2},{cl2}}, 
-                           {{cs3},{cc3},{ch3},{cl3}}};
+    int matrix[1][4][4] = {{{cs0},{cc0},{ch0},{cl0}},       //0
+                           {{cs1},{cc1},{ch1},{cl1}},       //1
+                           {{cs2},{cc2},{ch2},{cl2}},       //2
+                           {{cs3},{cc3},{ch3},{cl3}}};      //3
 
-    //
-    for (int s = 0; s <= matrix[4][s-2][1]; s++) {
+    //scale
+    for (int s = 0; s <= matrix[1][s-2][4]; s++) {
         
+        //((s * s) - pow(sum([0][s],[1][s]), 3));
+        //((s * s) - pow(sum([0][s],[1][s]), 4));
+        //((s, s) - pow(sum([0][s],[1][s]), 4));
+        //((s, s) * pow(sum([0][s],[1][s]), 3));
+        //other derivatives
+        // from the python code I wrote last year (n + (n * 2))
+        scale = ([0][s -2][4] + pow([0][s -2][s] * 3)) - [o][s][++3 s];
     }
 }
