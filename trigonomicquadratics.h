@@ -15,7 +15,7 @@ const float l = 32.000; // sum of h * 2 length between 2c
 
 void getc(c){
     // 4096 bits per port point in the network
-    return pow(c, 4);
+    return c= pow(c, 4);
 }
 
 void geth(h){
@@ -30,7 +30,7 @@ void getl(l, c, h){
     * from a calculation perspective permitting analysis of one
     * bidirectional WNetConnectionDialog1
     */
-    return (c, h) - ((2 * c), (10 * h));
+    return l = ((c, h) - ((2 * c), (10 * h)));
 }
 
 void getpsummised(c, h, l){
@@ -38,28 +38,28 @@ void getpsummised(c, h, l){
     * returns the summise of all parts of the contained network
     * ports relative to Thyme
     */
-    return sum(c, h, l);
+    return summised = sum(c, h, l);
 }
 
 void getcubic(p){
     /*
     * return the cubic total of the network feed 
     */
-    return pow(p, 3);
+    return cubic = pow(p, 3);
 }
 
 void getx(c, l, h){
     /**
      * changes the remainder to a definitive closed remainder of the vnetwork
     */
-    return (c%sum(c,h,l)) == ((c,l) - sum(c,h,l));
+    return x = (c%sum(c,h,l)) == ((c,l) - sum(c,h,l));
 }
 
 void getcor(x){
     /**
      * cor(x) is the angle at which the network transfers data where x is the c value c0 - c3
     */
-    return (x = cos(60));
+    return cor = (x = cos(60));
 }
 
 /*I'll have a think on proc, perhas some sockets*/
@@ -69,10 +69,14 @@ void proc (c, cor, x, l, h) {
      * set all the cs and cc to socket servers for the NTP
      * set the pipes between to zero
     */
+
+    //server and client respectively
     const cs0, cs1, cs2, cs3 = tsockserve();
     const cc0, cc1, cc2, cc3 = tsockclient();
-    ch0, ch1, ch2, ch3 = 0;
-    cl0, cl1, cl2, cl3 = 0; 
+
+    //time or physical distances from eah sync/src (client/server)
+    float ch0, ch1, ch2, ch3 = 0.0000000;
+    float cl0, cl1, cl2, cl3 = 0.0000000; 
 
     //Multidimensional array Assisgnment
     /**
@@ -86,14 +90,20 @@ void proc (c, cor, x, l, h) {
                            {{cs2},{cc2},{ch2},{cl2}},       //2
                            {{cs3},{cc3},{ch3},{cl3}}};      //3
 
-    //scale
+    //Lets do some stuff in the processor (proc)
+    //equilateral scale
     for (int s = 0; s <= matrix[1][s-2][4]; s++) {
-        
-        //((s * s) - pow(sum([0][s],[1][s]), 3));
-        //((s * s) - pow(sum([0][s],[1][s]), 4));
-        //((s, s) - pow(sum([0][s],[1][s]), 4));
-        //((s, s) * pow(sum([0][s],[1][s]), 3));
-        //other derivatives
+        //set the cosine of the corners (sync/src)
+        [0][s][4] = getcor.cor(x);
+
+        //#######      SOME CONSIDERATIONS     #######//
+        //#### ((s * s) - pow(sum([0][s],[1][s]), 3));
+        //#### ((s * s) - pow(sum([0][s],[1][s]), 4));
+        //#### ((s, s) - pow(sum([0][s],[1][s]), 4));
+        //#### ((s, s) * pow(sum([0][s],[1][s]), 3));
+        //#### other derivatives ETC
+        //############################################//
+
         // from the python code I wrote last year (n + (n * 2))
         
         return scale = ([0][s -2][4] + pow([0][s -2][s] * 3)) - [o][s][++3 s];
