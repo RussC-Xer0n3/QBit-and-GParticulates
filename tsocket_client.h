@@ -48,7 +48,7 @@ extern int errno;
 char localhost[] = "localhost";
 
 // Socket and protocols
-main(int argc, char *argv[]) {
+void tsockclient(int argc, char *argv[]) {
   struct hostent *ptrh;
   struct protoent *ptrp;
   struct sockaddr_in sad;

@@ -46,7 +46,7 @@
 
 int visits = 0;
 
-main(int argc, char *argv[])
+void tsockserve(int argc, char *argv[])
 {
     struct hostnet *ptrh;
     struct protoent *ptrp;
