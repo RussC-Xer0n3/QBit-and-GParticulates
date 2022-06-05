@@ -95,6 +95,7 @@ void proc (c, cor, x, l, h) {
         //((s, s) * pow(sum([0][s],[1][s]), 3));
         //other derivatives
         // from the python code I wrote last year (n + (n * 2))
-        scale = ([0][s -2][4] + pow([0][s -2][s] * 3)) - [o][s][++3 s];
+        
+        return scale = ([0][s -2][4] + pow([0][s -2][s] * 3)) - [o][s][++3 s];
     }
 }
