@@ -125,6 +125,14 @@ void proc (c, cor, x, l, h) {
          * each point can comm with eachother point and so there is no need for 
          * 12 halfway points and 6 hypotenuse as each srcnsync has a unique index 0 - 3
         */
-        return scale = (([0][s]-2[3] + pow([0][s]-2[s] * 3)) - [o][s][3]) = 1;
+        scale = (([0][s]-2[3] + pow([0][s]-2[s] * 3)) - [o][s][3]) = 1;
+
+        /**
+         * set the cosine for each srcnsync and include in comms 
+        */
+
+        cosine = getcor(scale);
+
+        
     }
 }
