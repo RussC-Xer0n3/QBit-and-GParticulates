@@ -100,9 +100,9 @@ void proc (c, cor, x, l, h) {
 
     //Lets do some stuff in the processor (proc)
     //equilateral scale
-    for (int s = 0; s <= matrix[1][s-2][4]; s++) {
+    for (int s = 0; s <= matrix[1][4][s-2]; s++) {
         //set the cosine of the corners (sync/src)
-        [0][s][4] == getcor.cor(x);
+        [0][4][s] == getcor.cor(x);
 
         //#######      SOME CONSIDERATIONS     #######//
         //#### ((s * s) - pow(sum([0][s],[1][s]), 3));
@@ -124,15 +124,29 @@ void proc (c, cor, x, l, h) {
          * the indices 0-3 are the numerical values of each, equilateral, 4 points
          * each point can comm with eachother point and so there is no need for 
          * 12 halfway points and 6 hypotenuse as each srcnsync has a unique index 0 - 3
+         * 
+         * an object
         */
-        scale = (([0][s]-2[3] + pow([0][s]-2[s] * 3)) - [o][s][3]) = 1;
+        const cosine () #define scale => ({(([s][s][s] + pow([s][s][s] * 3)) - [s][s][s]) = 1});
 
         /**
          * set the cosine for each srcnsync and include in comms 
+        
+        cosine = getcor(scale);
         */
 
-        cosine = getcor(scale);
+        /**
+         * set the cosine for the halfway points and assign it as an object.
+        */
+        halfwayCosine = {[][][]};
+        for (int h = 0; h <= matrix[1][4][--2 h];) {
+            halfwayCosine = geth(h);
+            return;
+        }
 
-        
+        /**
+         * 
+        */
+
     }
 }
