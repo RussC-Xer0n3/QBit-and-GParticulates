@@ -3,7 +3,15 @@
 # GreyHat Hacking 4th Ed. McGrawHill Regaldo et al. 2015
 # Computer Networks and Internets 3rd Ed. Prentice Hall, Comer, E. D,. 2001 
 # Xer0n3
+# The ppurpose of the methods enclosed are to create an equlateral pyramid
+# network for the purposes of precision location, mathematical rendering of
+# polygonal network interference in emf/emp and to assist in the precision of 
+# network calculations in T11.c
+# THERE ARE HALFWAY POINTS ON EACH HYPOTENUSE FOR THE PURPOSES OF CAL AND PRECISION
+# The sockets will hopefully be unified to both srcnsync, they will encapsulate t11.c
+# and derivatives and feed back into t11.c NN and AI for TPD((Time partial derivatives))
 */
+
 #include <math.h>
 #include <stdio.h>
 #include "tsocket_server.h"
@@ -37,14 +45,16 @@ void getpsummised(c, h, l){
     /*
     * returns the summise of all parts of the contained network
     * ports relative to Thyme
-    */
-    return summised = sum(c, h, l);
+    */    
+    return psummised = sum(c, h, l);
 }
 
 void getcubic(p){
     /*
     * return the cubic total of the network feed 
     */
+
+    
     return cubic = pow(p, 3);
 }
 
@@ -74,7 +84,7 @@ void proc (c, cor, x, l, h) {
     const cs0, cs1, cs2, cs3 = tsockserve();
     const cc0, cc1, cc2, cc3 = tsockclient();
 
-    //time or physical distances from eah sync/src (client/server)
+    //time or physical distances from each sync/src (client/server)
     float ch0, ch1, ch2, ch3 = 0.0000000;
     float cl0, cl1, cl2, cl3 = 0.0000000; 
 
@@ -105,7 +115,7 @@ void proc (c, cor, x, l, h) {
         //############################################//
 
         // from the python code I wrote last year (n + (n * 2))
-        
-        return scale = ([0][s -2][4] + pow([0][s -2][s] * 3)) - [o][s][++3 s];
+        // go through the src/sync array and assign scale to be set at initial scale to 1
+        return scale = (([0][s]-2[3] + pow([0][s]-2[s] * 3)) - [o][s][3]) = 1;
     }
 }
