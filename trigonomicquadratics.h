@@ -53,8 +53,6 @@ void getcubic(p){
     /*
     * return the cubic total of the network feed 
     */
-
-    
     return cubic = pow(p, 3);
 }
 
@@ -104,7 +102,7 @@ void proc (c, cor, x, l, h) {
     //equilateral scale
     for (int s = 0; s <= matrix[1][s-2][4]; s++) {
         //set the cosine of the corners (sync/src)
-        [0][s][4] = getcor.cor(x);
+        [0][s][4] == getcor.cor(x);
 
         //#######      SOME CONSIDERATIONS     #######//
         //#### ((s * s) - pow(sum([0][s],[1][s]), 3));
@@ -116,6 +114,17 @@ void proc (c, cor, x, l, h) {
 
         // from the python code I wrote last year (n + (n * 2))
         // go through the src/sync array and assign scale to be set at initial scale to 1
+        /**
+         * What we are saying here is for index 0 and 1 in multi dimensional index (MDI) 1
+         * perform increments and ommit the last to indices of the MDI 1 in a zero index MDA
+         * do so cubically to create a pyramid where we are initially focusing on the src and sync
+         * and their relative distance from eachother - 1 unit.
+         * where cs and cc are server and client respectively
+         * ch is halfway and cl is the hypotenuse
+         * the indices 0-3 are the numerical values of each, equilateral, 4 points
+         * each point can comm with eachother point and so there is no need for 
+         * 12 halfway points and 6 hypotenuse as each srcnsync has a unique index 0 - 3
+        */
         return scale = (([0][s]-2[3] + pow([0][s]-2[s] * 3)) - [o][s][3]) = 1;
     }
 }
