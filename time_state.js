@@ -49,6 +49,8 @@ function Time_State(){
     
     //Set initial state
     let state = States.T(); //obviously
+  
+    //TODO: permit state change method
 
     function probability (){
         //efficient probability algebra 
