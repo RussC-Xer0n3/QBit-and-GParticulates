@@ -48,7 +48,7 @@ function Time_State(){
     }
     
     //Set initial state
-    const state = States.T(); //obviously
+    let state = States.T(); //obviously
 
     function probability (){
         //efficient probability algebra 
