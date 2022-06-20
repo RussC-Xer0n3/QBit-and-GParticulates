@@ -6,7 +6,7 @@
 */
 
 /**
- * @Author - xer0n3
+ * @Author - xer0n3, Matthew James, Et. Al
  * Calculate the transitions, use 
  * qty and probability of state use
  * according to Ai and DNN calls
@@ -50,7 +50,20 @@ function Time_State(){
     //Set initial state
     let state = States.T(); //obviously
   
-    //TODO: permit state change method
+    //Validate state change method
+    function validate(){
+        for (var i in States) {
+            if(states.hasOwnProperty(i) && States[i] == state) {
+               return true;
+            }
+        }
+        return false;
+    }
+    
+    //Set state
+    function setState = async function (state) {
+        validate(state);
+    }
 
     function probability (){
         //efficient probability algebra 
