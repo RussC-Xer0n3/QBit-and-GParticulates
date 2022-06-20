@@ -13,15 +13,15 @@
 */
 
 function Time_State(){
-
+    //Counts use
+    //TODO: per state and which one
     function use () {
         var count = 0;
-        for(var i in States[i]) {
-            count+=1;
-        }
+        count+=1;
         use = count;
         return use;  
     }
+    
     //Quantity of states available
     function States (){
 
@@ -46,7 +46,8 @@ function Time_State(){
         } : 4
 
     }
-
+    
+    //Set initial state
     const state = States.T(); //obviously
 
     function probability (){
@@ -55,8 +56,11 @@ function Time_State(){
         return state_probability;
     }
 
-    //four states, probability of one being in use at any time based on load and use where use is qty of times a state has been used per 100ms
-
+    /**
+     * four states, probability of one being in use at 
+     * any time based on load and use where use is qty 
+     * of times a state has been used per 100ms
+     */
     const transition = async function (state, (resolve, reject) => {
         (((state_probability  / use) / 1e1);
     });
