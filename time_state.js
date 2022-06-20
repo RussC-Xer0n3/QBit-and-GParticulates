@@ -62,7 +62,7 @@ function Time_State(){
      * of times a state has been used per 100ms
      */
     const transition = async function (state, (resolve, reject) => {
-        (((state_probability  / use) / 1e1);
+        ((state_probability  / use) / 1e1);
     });
 
 return;
