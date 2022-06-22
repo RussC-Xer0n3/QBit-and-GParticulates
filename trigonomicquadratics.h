@@ -132,7 +132,7 @@ void proc (c, cor, x, l, h) {
          * 
          * an object
         */
-        const cosine () scale => ({(([s][s][srcnsync] + pow([s][s][srcnsync] * 3)) - [s][s][s]) = 1});
+        const scale = cosine (srcnsync)*3;
 
         /**
          * set the cosine for each srcnsync and include in comms 
