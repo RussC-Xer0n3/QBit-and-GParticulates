@@ -23,7 +23,7 @@ const float l = 32.000; // sum of h * 2 length between 2c
 
 void getc(c){
     // 4096 bits per port point in the network
-    return c= pow(c, 4);
+    return c = pow(c, 4);
 }
 
 void geth(h){
@@ -46,28 +46,32 @@ void getpsummised(c, h, l){
     * returns the summise of all parts of the contained network
     * ports relative to Thyme
     */    
-    return psummised = sum(c, h, l);
+    #define psummised = sum(c, h, l);
+    return; 
 }
 
-void getcubic(p){
+void getcubic(){
     /*
     * return the cubic total of the network feed 
     */
-    return cubic = pow(p, 3);
+    #define cubic = pow(p, 3);
+    return;
 }
 
 void getx(c, l, h){
     /**
      * changes the remainder to a definitive closed remainder of the vnetwork
     */
-    return x = (c%sum(c,h,l)) == ((c,l) - sum(c,h,l));
+    #define x = (c%sum(c,h,l)) == ((c,l) - sum(c,h,l));
+    return; 
 }
 
 void getcor(x){
     /**
      * cor(x) is the angle at which the network transfers data where x is the c value c0 - c3
     */
-    return cor = (x = cos(60));
+    #define cor = (x = cos(60));
+    return;
 }
 
 /*I'll have a think on proc, perhas some sockets*/
@@ -128,7 +132,7 @@ void proc (c, cor, x, l, h) {
          * 
          * an object
         */
-        const cosine () #define scale => ({(([s][s][srcnsync] + pow([s][s][srcnsync] * 3)) - [s][s][s]) = 1});
+        const cosine () scale => ({(([s][s][srcnsync] + pow([s][s][srcnsync] * 3)) - [s][s][s]) = 1});
 
         /**
          * set the cosine for each srcnsync and include in comms 
