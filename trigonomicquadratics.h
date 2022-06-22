@@ -139,19 +139,16 @@ void proc (c, cor, x, l, h) {
         
         cosine = getcor(scale);
         */
+    }
 
-        /**
-         * set the cosine for the halfway points and assign it as an object.
-        */
-        halfwayCosine = {[][][]};
-        for (int h = 0; h <= matrix[1][4][--2 h];) {
-            halfwayCosine = geth(h);
-            return;
-        }
-
-        /**
-         * 
-        */
-
+    /**
+     * set the cosine for the halfway points and assign it as an object.
+    */
+    for (int h = 0; h <= matrix[1][4][--2 h];) {
+        
+        #define halfway = geth.h([0][4][s]);
+        
+        const hscale = cosine(halfway);
+        return;
     }
 }
