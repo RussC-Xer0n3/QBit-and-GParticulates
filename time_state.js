@@ -25,25 +25,25 @@ function Time_State(){
     //Quantity of states available
     function States (){
 
-        const function derivative () {
+        1 : function derivative () {
         //Partial time derivative
             use();
-        } : 1
+        },
 
-        const function PT () {
+        2 : function PT () {
         //Past time
             use();
-        } : 2
+        },
 
-        const function FT () {
+        3 : function FT () {
         //Future time
             use();
-        } : 3
+        },
 
-        const function T () {
+        4 : function T () {
         //Time
             use();
-        } : 4
+        }
 
     }
     
@@ -67,7 +67,7 @@ function Time_State(){
 
     function probability (){
         //efficient probability algebra 
-        const state_probability = (4 ** 4) * 2)
+        const state_probability = ((4 ** 4) * 2);
         return state_probability;
     }
 
