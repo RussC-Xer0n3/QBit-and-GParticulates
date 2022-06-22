@@ -102,7 +102,7 @@ void proc (c, cor, x, l, h) {
     //equilateral scale
     for (int s = 0; s <= matrix[1][4][s-2]; s++) {
         //set the cosine of the corners (sync/src)
-        [0][4][s] == getcor.cor(x);
+        srcnsync = getcor.cor([0][4][s]);
 
         //#######      SOME CONSIDERATIONS     #######//
         //#### ((s * s) - pow(sum([0][s],[1][s]), 3));
@@ -127,7 +127,7 @@ void proc (c, cor, x, l, h) {
          * 
          * an object
         */
-        const cosine () #define scale => ({(([s][s][s] + pow([s][s][s] * 3)) - [s][s][s]) = 1});
+        const cosine () #define scale => ({(([s][s][srcnsync] + pow([s][s][srcnsync] * 3)) - [s][s][s]) = 1});
 
         /**
          * set the cosine for each srcnsync and include in comms 
