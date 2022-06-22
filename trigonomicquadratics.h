@@ -103,6 +103,11 @@ void proc (c, cor, x, l, h) {
                            {{cs2},{cc2},{ch2},{cl2}},       //2
                            {{cs3},{cc3},{ch3},{cl3}}};      //3
 
+
+    srcnsync = {};
+    scale = {};
+    halfway = {};
+    hscale = {};
     //Lets do some stuff in the processor (proc)
     //equilateral scale
     for (int s = 0; s <= matrix[1][4][s-2]; s++) {
@@ -132,13 +137,12 @@ void proc (c, cor, x, l, h) {
          * 
          * an object
         */
-        const scale = cosine (srcnsync)*3;
 
         /**
          * set the cosine for each srcnsync and include in comms 
-        
-        cosine = getcor(scale);
         */
+        const scale = cosine (srcnsync)*3;
+        return;
     }
 
     /**
@@ -148,7 +152,8 @@ void proc (c, cor, x, l, h) {
         
         #define halfway = geth.h([0][4][s]);
         
-        const hscale = cosine(halfway);
+        const hscale = cosine(halfway)*3;
+
         return;
     }
 }
