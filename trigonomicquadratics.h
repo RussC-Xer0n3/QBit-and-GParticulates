@@ -63,19 +63,19 @@ void getx(c, l, h){
      * changes the remainder to a definitive closed remainder of the vnetwork
     */
     #define x = (c%sum(c,h,l)) == ((c,l) - sum(c,h,l));
-    return; 
+    return;
 }
 
-void getcor(x){
+void getcor(){
     /**
      * cor(x) is the angle at which the network transfers data where x is the c value c0 - c3
     */
-    #define cor = (x = cos(60));
+    #define cor = (x = getx.cos(60));
     return;
 }
 
 /*I'll have a think on proc, perhas some sockets*/
-void proc (c, cor, x, l, h) {
+void proc (c, l, h) {
 
     /**
      * set all the cs and cc to socket servers for the NTP
@@ -83,8 +83,8 @@ void proc (c, cor, x, l, h) {
     */
 
     //server and client respectively
-    const cs0, cs1, cs2, cs3 = tsockserve();
-    const cc0, cc1, cc2, cc3 = tsockclient();
+    const cs0, cs1, cs2, cs3 === tsockserve();
+    const cc0, cc1, cc2, cc3 === tsockclient();
 
 
     //time or physical distances from each sync/src (client/server)
