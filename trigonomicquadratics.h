@@ -28,7 +28,7 @@ void getc(c){
 
 void geth(h){
     //return the cosine of equilateral connectivity at halfway
-    return h = 12*(cos(60));
+    return h = cos(60);
 }
 
 void getl(l, c, h){
@@ -104,12 +104,30 @@ void proc (c, l, h) {
                            {{cs3},{cc3},{ch3},{cl3}}};      //3
 
 
-    srcnsync = {};
-    scale = {};
-    halfway = {};
-    hscale = {};
-    //Lets do some stuff in the processor (proc)
-    //equilateral scale
+    
+    // from the python code I wrote last year (n + (n * 2))
+    // go through the src/sync array and assign scale to be set at initial scale to 1
+    /**
+     * The for loop is for index 0 and 1 in multi dimensional index (MDI) 1
+     * perform increments and ommit the last to indices of the MDI 1 in a zero index MDA
+     * do so cubically to create a pyramid where we are initially focusing on the src and sync
+     * and their relative distance from eachother - 1 unit.
+     * where cs and cc are server and client respectively
+     * ch is halfway and cl is the hypotenuse
+     * the indices 0-3 are the numerical values of each, equilateral, 4 points
+     * each point can comm with eachother point and so there is no need for 
+     * 12 halfway points and 6 hypotenuse as each srcnsync has a unique index 0 - 3
+     * 
+     * an object
+    */
+
+    #define srcnsync = {};
+    #define cscale = {};
+    #define halfway = {};
+    #define hscale = {};
+    #define length = {};
+    #define lscale = {};
+   
     for (int s = 0; s <= matrix[1][4][s-2]; s++) {
         //set the cosine of the corners (sync/src)
         #define srcnsync = getcor.cor([0][4][s]);
@@ -122,37 +140,30 @@ void proc (c, l, h) {
         //#### other derivatives ETC
         //############################################//
 
-        // from the python code I wrote last year (n + (n * 2))
-        // go through the src/sync array and assign scale to be set at initial scale to 1
-        /**
-         * What we are saying here is for index 0 and 1 in multi dimensional index (MDI) 1
-         * perform increments and ommit the last to indices of the MDI 1 in a zero index MDA
-         * do so cubically to create a pyramid where we are initially focusing on the src and sync
-         * and their relative distance from eachother - 1 unit.
-         * where cs and cc are server and client respectively
-         * ch is halfway and cl is the hypotenuse
-         * the indices 0-3 are the numerical values of each, equilateral, 4 points
-         * each point can comm with eachother point and so there is no need for 
-         * 12 halfway points and 6 hypotenuse as each srcnsync has a unique index 0 - 3
-         * 
-         * an object
-        */
-
         /**
          * set the cosine for each srcnsync and include in comms 
         */
-        const scale = cosine (srcnsync)*3;
+        float cscale = pow(cosine(srcnsync), 3);
         return;
     }
 
     /**
      * set the cosine for the halfway points and assign it as an object.
     */
-    for (int h = 0; h <= matrix[1][4][--2 h];) {
+    for (int h = 0; h <= matrix[1][4][++2 h --1];) {
         
-        #define halfway = geth.h([0][4][s]);
+        #define halfway = geth.h([0][4][h]);
         
-        const hscale = cosine(halfway)*3;
+        const hscale = pow(cosine(halfway), 3);
+
+        return;
+    }
+
+    for (int l = 0; l <= matrix[1][4][++3 l]) {
+
+        #define length = getl.l([0][4][l]);
+
+        const lscale = (((srcnsync + halfway) * 2) /** divided over time delay between srcnsync + halfway multiplied twice to get time network length because l is a network pip with precision points where halfway can be set to a srcncsync again according to scale required */ );
 
         return;
     }
