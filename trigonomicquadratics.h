@@ -82,6 +82,7 @@ void proc (c, cor, x, l, h) {
     const cs0, cs1, cs2, cs3 = tsockserve();
     const cc0, cc1, cc2, cc3 = tsockclient();
 
+
     //time or physical distances from each sync/src (client/server)
     float ch0, ch1, ch2, ch3 = 0.0000000;
     float cl0, cl1, cl2, cl3 = 0.0000000; 
@@ -102,7 +103,7 @@ void proc (c, cor, x, l, h) {
     //equilateral scale
     for (int s = 0; s <= matrix[1][4][s-2]; s++) {
         //set the cosine of the corners (sync/src)
-        srcnsync = getcor.cor([0][4][s]);
+        #define srcnsync = getcor.cor([0][4][s]);
 
         //#######      SOME CONSIDERATIONS     #######//
         //#### ((s * s) - pow(sum([0][s],[1][s]), 3));
