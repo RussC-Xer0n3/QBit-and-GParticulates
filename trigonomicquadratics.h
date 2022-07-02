@@ -98,7 +98,7 @@ void proc (c, l, h) {
      * first tier variables
      */
 
-    int matrix[1][4][4] = {{{cs0},{cc0},{ch0},{cl0}},       //0
+    int matrix[0][3][3] = {{{cs0},{cc0},{ch0},{cl0}},       //0
                            {{cs1},{cc1},{ch1},{cl1}},       //1
                            {{cs2},{cc2},{ch2},{cl2}},       //2
                            {{cs3},{cc3},{ch3},{cl3}}};      //3
@@ -128,7 +128,7 @@ void proc (c, l, h) {
     #define length = {};
     #define lscale = {};
    
-    for (int s = 0; s <= matrix[0][1][2 -2]; s++) {
+    for (int s = 0; s <= matrix[0][1][3]; s++) {
         //set the cosine of the corners (sync/src)
         #define srcnsync = getcor.cor([0][1][s]);
 
@@ -150,7 +150,7 @@ void proc (c, l, h) {
     /**
      * set the cosine for the halfway points and assign it as an object.
     */
-    for (int h = 0; h <= matrix[0][++2 2 --1][4];) {
+    for (int h = 0; h <= matrix[0][2][3];) {
         
         #define halfway = geth.h([0][2][h]);
         
@@ -159,7 +159,7 @@ void proc (c, l, h) {
         return;
     }
 
-    for (int l = 0; l <= matrix[0][++3 3][4]) {
+    for (int l = 0; l <= matrix[0][3][3]) {
 
         #define length = getl.l([0][3][l]);
 
