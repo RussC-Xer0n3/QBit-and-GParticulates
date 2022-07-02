@@ -130,21 +130,12 @@ void proc (c, l, h) {
    
     for (int s = 0; s <= matrix[0][1][3]; s++) {
         //set the cosine of the corners (sync/src)
-        #define srcnsync = getcor.cor([0][1][s]);
-
-        //#######      SOME CONSIDERATIONS     #######//
-        //#### ((s * s) - pow(sum([0][s],[1][s]), 3));
-        //#### ((s * s) - pow(sum([0][s],[1][s]), 4));
-        //#### ((s, s) - pow(sum([0][s],[1][s]), 4));
-        //#### ((s, s) * pow(sum([0][s],[1][s]), 3));
-        //#### other derivatives ETC
-        //############################################//
+        srcnsync.add(getcor.cor([0][s][s]));
 
         /**
          * set the cosine for each srcnsync and include in comms 
         */
-        float cscale = pow(cosine(srcnsync), 3);
-        return;
+        cscale.add(pow(cosine(srcnsync), 3));
     }
 
     /**
@@ -152,19 +143,20 @@ void proc (c, l, h) {
     */
     for (int h = 0; h <= matrix[0][2][3];) {
         
-        #define halfway = geth.h([0][2][h]);
+        halfway.add(geth.h([0][2][h]));
         
-        const hscale = pow(cosine(halfway), 3);
-
-        return;
+        hscale.add(pow(cosine(halfway), 3));
     }
 
     for (int l = 0; l <= matrix[0][3][3]) {
 
-        #define length = getl.l([0][3][l]);
+        length.add(getl.l([0][3][l]));
 
-        const lscale = (((srcnsync + halfway) * 2) /** divided over time delay between srcnsync + halfway multiplied twice to get time network length because l is a network pip with precision points where halfway can be set to a srcncsync again according to scale required */ );
-
-        return;
+        lscale.add(((srcnsync + halfway) * 2) / TD); 
+        /** divided over time delay between srcnsync + halfway multiplied 
+         * twice to get time network length because l is a network pip with
+         * precision points where halfway can be set to a srcncsync again 
+         * according to scale required 
+         */ 
     }
 }
