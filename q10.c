@@ -36,9 +36,6 @@
 #include <stdlib.h> //malloc
 #include <math.h>
 
-float forward;
-float out_layer;
-float hidden;
 float weight_activate;
 float dz;
 float Y;
