@@ -75,7 +75,15 @@ float main(float argc, char **argv) {
     #define R                   (Q / (REWARD + BIAS)) /*QBit logic implemented as MDP to calculate probability of logic being correct and successful.*/
 
     //inputs from structure or header includes
-    float x = 746.00; //pixels per sample for example 
+    float x = 746.00; //pixels per sample for example
+
+    /**
+     * Here the training data is going to be the 
+     * sockets and trigonomicquadratics network
+     * prism - sounds cool right.
+     * 
+     * 
+     * */ 
     #define input               (x, training)
     
     //Neurons
