@@ -89,7 +89,7 @@ float main(float argc, char **argv) {
     #define weights             WEIGHT()*(input, neuron, output)
     
     //DNN activation and backpropagation
-    #define dz                  BIAS++;
+    #define dz                  BIAS++
     #define weight_activate     (dz * SIGMOID(input, neuron, output))
 	#define forward             SIGMOIDPRIME((out * sigmoid) + dz)
 	#define hidden              dz((out++ * out_layer++) * y)
