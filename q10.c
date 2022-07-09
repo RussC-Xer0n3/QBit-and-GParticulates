@@ -109,7 +109,7 @@ float main(float argc, char **argv) {
     //DNN activation and backpropagation
 
     dz() * SIGMOID(N(), neuron.neu, output.o);
-    #define forward SIGMOIDPRIME((OUT() * SIGMOID()) + dz());
+    #define forward SIGMOIDPRIME((OUT() * SIGMOID()) + dz())
     #define hidden dz((OUT() * out_layer++) * Y())
     #define out_layer dz(((SIGMOID(N))-(OUT * SIGMOID(N))) * SIGMOIDPRIME(forward))
 	
