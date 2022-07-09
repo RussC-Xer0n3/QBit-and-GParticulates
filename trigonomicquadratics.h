@@ -21,58 +21,17 @@ const float c = 8.000; // bits corners
 const float h = 16.000; // bits half of l connection destination
 const float l = 32.000; // sum of h * 2 length between 2c
 
-void getc(c){
-    // 4096 bits per port point in the network
-    return c = pow(c, 4);
-}
+int main(float argc, char *argv[]);
+void proc(float c, float h, float l);
+void getc(float c);
+void geth(float h);
+float getl(float l, float c, float h)
+float getpsummised(float c, float h, float l);
+float getcubic();
+float getx();
+float getcor();
 
-void geth(h){
-    //return the cosine of equilateral connectivity at halfway
-    return h = cos(60);
-}
-
-void getl(l, c, h){
-    /*
-    * return the full length of one path relative to the port
-    * points and removal of all other parts of the network
-    * from a calculation perspective permitting analysis of one
-    * bidirectional WNetConnectionDialog1
-    */
-    return l = ((c, h) - ((2 * c), (10 * h)));
-}
-
-void getpsummised(c, h, l){
-    /*
-    * returns the summise of all parts of the contained network
-    * ports relative to Thyme
-    */    
-    #define psummised = sum(c, h, l);
-    return; 
-}
-
-void getcubic(){
-    /*
-    * return the cubic total of the network feed 
-    */
-    #define cubic = pow(p, 3);
-    return;
-}
-
-void getx(c, l, h){
-    /**
-     * changes the remainder to a definitive closed remainder of the vnetwork
-    */
-    #define x = (c%sum(c,h,l)) == ((c,l) - sum(c,h,l));
-    return;
-}
-
-void getcor(){
-    /**
-     * cor(x) is the angle at which the network transfers data where x is the c value c0 - c3
-    */
-    #define cor = (x = getx.cos(60));
-    return;
-}
+int main(){return 0;}
 
 /*I'll have a think on proc, perhas some sockets*/
 void proc (c, l, h) {
@@ -83,13 +42,13 @@ void proc (c, l, h) {
     */
 
     //server and client respectively
-    const cs0, cs1, cs2, cs3 === tsockserve();
-    const cc0, cc1, cc2, cc3 === tsockclient();
+    const cs0 = cs1 = cs2 = cs3 = tsockserve();
+    const cc0 = cc1 = cc2 = cc3 = tsockclient();
 
 
     //time or physical distances from each sync/src (client/server)
-    float ch0, ch1, ch2, ch3 = 0.0000000;
-    float cl0, cl1, cl2, cl3 = 0.0000000; 
+    float ch0 = ch1 = ch2 = ch3 = 0.0000000;
+    float cl0 = cl1 = cl2 = cl3 = 0.0000000; 
 
     //Multidimensional array Assisgnment
     /**
@@ -121,21 +80,21 @@ void proc (c, l, h) {
      * an object
     */
 
-    #define srcnsync = {};
-    #define cscale = {};
-    #define halfway = {};
-    #define hscale = {};
-    #define length = {};
-    #define lscale = {};
+    #define srcnsync {}
+    #define cscale   {}
+    #define halfway  {}
+    #define hscale   {}
+    #define length   {}
+    #define lscale   {}
    
     for (int s = 0; s <= matrix[0][1][3]; s++) {
         //set the cosine of the corners (sync/src)
-        srcnsync.add(getcor.cor([0][s][s]));
+        srcnsync {getcor([0][s][s])}
 
         /**
          * set the cosine for each srcnsync and include in comms 
         */
-        cscale.add(pow(cosine(srcnsync), 3));
+        cscale {pow(cosine(srcnsync), 3)}
     }
 
     /**
@@ -143,20 +102,77 @@ void proc (c, l, h) {
     */
     for (int h = 0; h <= matrix[0][2][3];) {
         
-        halfway.add(geth.h([0][2][h]));
+        halfway {geth([0][2][h])}
         
-        hscale.add(pow(cosine(halfway), 3));
+        hscale {pow(cosine(halfway), 3)}
     }
 
     for (int l = 0; l <= matrix[0][3][3]) {
 
-        length.add(getl.l([0][3][l]));
+        length {getl([0][3][l], c, h)}
 
-        lscale.add(((srcnsync + halfway) * 2) / TD); 
+        lscale {((srcnsync + halfway) * 2) / TD} 
         /** divided over time delay between srcnsync + halfway multiplied 
          * twice to get time network length because l is a network pip with
          * precision points where halfway can be set to a srcncsync again 
          * according to scale required 
          */ 
     }
+}
+
+void getc(c){
+    // 4096 bits per port point in the network
+    return c = pow(c, 4);
+}
+
+void geth(h){
+    //return the cosine of equilateral connectivity at halfway
+    return h = cos(60);
+}
+
+float getl(l, c, h){
+    /*
+    * return the full length of one path relative to the port
+    * points and removal of all other parts of the network
+    * from a calculation perspective permitting analysis of one
+    * bidirectional WNetConnectionDialog1
+    */
+    return l = ((c, h) - ((2 * c), (10 * h)));
+}
+
+float getpsummised(c, h, l){
+    /*
+    * returns the summise of all parts of the contained network
+    * ports relative to Thyme
+    */    
+    #define psummised (sum(getc, geth, getl))
+    return psummised; 
+}
+
+float getcubic(){
+    /*
+    * return the cubic total of the network feed 
+    */
+    float p = getpsummised();
+    float cubic = (pow(p, 3));
+
+    return cubic;
+}
+
+float getx(c, l, h){
+    /**
+     * changes the remainder to a definitive closed remainder of the vnetwork
+    */
+    #define x (c%sum(c,h,l)) == ((c,l) - sum(c,h,l))
+    return x;
+}
+
+void getcor(){
+    /**
+     * cor(x) is the angle at which the network transfers data where x is the c value c0 - c3
+    */
+
+    float cor = (cos(getx(c, l, h), 60));
+   
+    return cor;
 }
