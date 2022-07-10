@@ -21,7 +21,6 @@ MOVED TO THYME REPOSITORY
 
 float r     = 1.0000000;
 float dim   = 3; //trigonomicquadratics
-float a     = 0.1;
 float rad   = 0.1;
 
 
