@@ -51,7 +51,7 @@ float main (float argc, char *argv[]) {
     time_t time2, time1; //Set the time to be calculated
     int i; //Set the iterable
 
-    time2 = time(NULL); //Count the time from null
+    time_t time2 = time(NULL); //Count the time from null
     sig(A, C); //Signal out
 
     /**
@@ -68,7 +68,7 @@ float main (float argc, char *argv[]) {
         }
 
     }
-    time1; //Set the second variable to be the return signal as the stop timer
+    time_t time1; //Set the second variable to be the return signal as the stop timer
 
     v(time2, time1); //Get the difference (time taken)
     printf('%.00000000f', v); //Print the value of time taken
