@@ -49,15 +49,25 @@ float main (float argc, char *argv[]) {
     /** The timer and signal to send out */
 
     time_t time2, time1; //Set the time to be calculated
-    float i; //Set the iterable
+    int i; //Set the iterable
 
     time2 = time(NULL); //Count the time from null
     sig(A, C); //Signal out
 
-    for(i = 0; i = sig; i++){ //If i matches sig return
-        wait(i); //Wait for the return signal
-    }
+    /**
+     * need to build the sending signal and 
+     * the return signal through hardware here
+    */
 
+    for(i = 0; i == sig(A, C); i++){ //If i matches sig return
+
+        if (i) {
+            break;
+        } else {
+            wait(i); //Wait for the return signal
+        }
+
+    }
     time1; //Set the second variable to be the return signal as the stop timer
 
     v(time2, time1); //Get the difference (time taken)
