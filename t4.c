@@ -34,7 +34,7 @@ float main (float argc, char *argv[]) {
     #define A pow((pi*rad), dim)
 
     #define v difftime(time_t time2, time_t time1) /*Returns the time differential betweemn 1 and 2*/
-    #define u exp(pow(pow((pi*(rad)), dim)), ((exp(++a))/(exp(a--)))) //Rate of change or constant from i9.c
+    #define C exp(pow(pow((pi*(rad)), dim)), ((exp(++a))/(exp(a--)))) //Rate of change or constant from i9.c
     //#define C = (((A)-pow(sig(x, y ,z), 3))/T); //Rate of change or constant
     #define T pow(C, T) //Gives us the time and constant as a velocity because pT and fT are factored in. T is present, C is constant rate of change thus, the present velocity.
     #define pT (C % fT)/T /*looks good could mean something later on (pow((T + pT)/T), A)/(pi(sig(-v)));*/
