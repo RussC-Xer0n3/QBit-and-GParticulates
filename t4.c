@@ -19,46 +19,33 @@ MOVED TO THYME REPOSITORY
 #include <time.h>
 #include "trigonomicquadratics.h" //refer to C:\Users\devel\Documents\Pypyramid_polygomy_0.7_variants.zip
 
-float A;
-float T;
-float C;
-float pT;
-float fT;
-float v;
-float pi;
-float r;
-float dim = 3; //trigonomicquadratics
-float inc;
-float sig;
-//An afterthoughts
-float div;
-float par;
-float nth;
-float vel;
-float u;
-float a = 0.1;
-float rad = 0.1;
+float r     = 1.0000000;
+float dim   = 3; //trigonomicquadratics
+float a     = 0.1;
+float rad   = 0.1;
 
-#define a 0.1
-#define sig ((1)/(-1(z))) //Signal used as input for track and trace or simply tx and rx for xyz calc in 3rd and or 4th Dimension (Time).
-
-#define pi 3.1415936535
-#define A (pow((pi*rad), dim))
-
-#define v (difftime(time_t time2, time_t time1)) /*Returns the time differential betweemn 1 and 2*/
-#define u (exp(pow(pow((pi*(rad)), dim)), ((exp(++a))/(exp(a--))))) //Rate of change or constant from i9.c
-//#define C = (((A)-pow(sig(x, y ,z), 3))/T); //Rate of change or constant
-#define T (pow(C, T)) //Gives us the time and constant as a velocity because pT and fT are factored in. T is present, C is constant rate of change thus, the present velocity.
-#define pT ((C % fT)/T) /*looks good could mean something later on (pow((T + pT)/T), A)/(pi(sig(-v)));*/
-#define fT (((T)/C)-pT) /*(((pT/T)/pT), sig(A, -v));*/
-
-/*After thoughts*/
-#define div (pow((T/T), T)) //Divide over current to the Nth of T
-#define par ((T*T)/T) //Parallel of two constants divided by the present andits constant as a matrix of f(x);
-#define nth (pow(T, A)) //Time in the Nth Dimension
-#define vel (T / v) //Should give the velocity of time and constant
 
 float main (float argc, char *argv[]) {
+    
+    #define a 0.1
+    #define sig (1)/(-1(z)) //Signal used as input for track and trace or simply tx and rx for xyz calc in 3rd and or 4th Dimension (Time).
+
+    #define pi 3.1415936535
+    #define A pow((pi*rad), dim)
+
+    #define v difftime(time_t time2, time_t time1) /*Returns the time differential betweemn 1 and 2*/
+    #define u exp(pow(pow((pi*(rad)), dim)), ((exp(++a))/(exp(a--)))) //Rate of change or constant from i9.c
+    //#define C = (((A)-pow(sig(x, y ,z), 3))/T); //Rate of change or constant
+    #define T pow(C, T) //Gives us the time and constant as a velocity because pT and fT are factored in. T is present, C is constant rate of change thus, the present velocity.
+    #define pT (C % fT)/T /*looks good could mean something later on (pow((T + pT)/T), A)/(pi(sig(-v)));*/
+    #define fT ((T)/C)-pT /*(((pT/T)/pT), sig(A, -v));*/
+
+    /*After thoughts*/
+    #define div pow((T/T), T) //Divide over current to the Nth of T
+    #define par (T*T)/T //Parallel of two constants divided by the present andits constant as a matrix of f(x);
+    #define nth pow(T, A) //Time in the Nth Dimension
+    #define vel T / v //Should give the velocity of time and constant
+
     /** The timer and signal to send out */
 
     time_t time2, time1; //Set the time to be calculated
@@ -67,7 +54,7 @@ float main (float argc, char *argv[]) {
     time2 = time(NULL); //Count the time from null
     sig(A, C); //Signal out
 
-    for(i = 0; i === sig; i++){ //If i matches sig return
+    for(i = 0; i = sig; i++){ //If i matches sig return
         wait(i); //Wait for the return signal
     }
 
